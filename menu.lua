@@ -38,7 +38,8 @@ local function LoadModule(name)
     end
 end
 
--- Загружаем модули
+-- Загружаем модули (bypass самым первым)
+LoadModule("bypass")
 LoadModule("utils")
 LoadModule("esp")
 LoadModule("aimbot")
